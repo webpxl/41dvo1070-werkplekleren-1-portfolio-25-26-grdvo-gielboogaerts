@@ -42,14 +42,15 @@ nav {
 }
 
 main {
-    height: 580px;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 main div {
     width: 270px;
+    position: relative;
+    top: 13rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
