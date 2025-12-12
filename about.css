@@ -95,7 +95,31 @@ footer {
 
 @media screen and (max-width: 430px) {
 
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+    }
+
     #tekst {
-        width: 250px;
+        padding: 2rem 1rem;
+    }
+
+    #tekst div{
+        width: 340px;
+    }
+
+    #beelden {
+        align-items: center;
+        gap: 5rem;
+    }
+
+    #profielfoto {
+        align-self: center;
+    }
+
+    #career {
+        position: relative;
+        left: 3rem;
     }
 }
