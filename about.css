@@ -93,3 +93,9 @@ footer {
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 430px) {
+
+    #tekst {
+        width: 250px;
+    }
+}
