@@ -5,10 +5,9 @@
 }
 
 body {
-    background-color: #0000FF;
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
-    color: white;
+    color: blue;
 }
 
 nav {
@@ -34,7 +33,7 @@ nav {
 
 .navigation a {
     text-decoration: none;
-    color: white;
+    color: blue;
 }
 
 .navigation a:hover {
@@ -55,6 +54,15 @@ main {
     height: 35rem;
 }
 
+#goToTop {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 0.5rem;
+    background-color: blue;
+    color: white;
+}
+
 #tekst {
     width: 270px;
     position: relative;
@@ -63,7 +71,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    text-align-last: justify;
+    text-align: center;
 }
 
 .tab {
@@ -72,8 +80,8 @@ main {
     width: 100%;
     height: 100px;
     background-color: white;
-    color: black;
-    border: .5px solid black;
+    color: blue;
+    border: .5px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +98,8 @@ main {
     width: 100%;
     height: 50px;
     background-color: white;
-    color: black;
-    border: .5px solid black;
+    color: blue;
+    border: .5px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,6 +126,16 @@ main {
     top: 0;
 }
 
+#websites {
+    position: Sticky;
+    top: 100px;
+}
+
+#photography {
+    position: sticky;
+    top: 150px;
+}
+
 .work {
     display: flex;
     flex-direction: row;
@@ -132,6 +150,22 @@ article {
     width: 100%;
 }
 
+.photo {
+    background-color: white;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.portret {
+    width: 50%;
+}
+
+.landscape {
+    width: 88.9%;
+}
+
+
 footer {
     height: 40px;
     padding: 10px 0;
@@ -139,7 +173,8 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 13px;
-    color: black;
+    color: blue;
+    border-top: .5px solid blue;
 }
 
 @media screen and (max-width: 750px) {

@@ -5,10 +5,10 @@
 }
 
 body {
-    background-color: #0000FF;
+    background-color: white;
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
-    color: white;
+    color: blue;
 }
 
 nav {
@@ -34,7 +34,7 @@ nav {
 
 .navigation a {
     text-decoration: none;
-    color: white;
+    color: blue;
 }
 
 .navigation a:hover {
@@ -58,8 +58,7 @@ main div {
 
 div p {
     width: 100%;
-    text-align: justify;
-    text-align-last: justify;
+    text-align: center;
 }
 
 footer {
@@ -71,7 +70,8 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 13px;
-    color: black;
+    color: blue;
+    border-top: .5px solid blue;
 }
 
 .normal {

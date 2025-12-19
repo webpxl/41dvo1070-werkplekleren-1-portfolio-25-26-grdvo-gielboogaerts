@@ -8,7 +8,7 @@ body {
     background-color: #0000FF;
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
-    color: white;
+    color: blue;
 }
 
 nav {
@@ -34,7 +34,7 @@ nav {
 
 .navigation a {
     text-decoration: none;
-    color: white;
+    color: blue;
 }
 
 .navigation a:hover {
@@ -80,7 +80,8 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 13px;
-    color: black;
+    color: blue;
+    border-top: .5px solid blue;
 }
 
 @media screen and (max-width: 430px) {
