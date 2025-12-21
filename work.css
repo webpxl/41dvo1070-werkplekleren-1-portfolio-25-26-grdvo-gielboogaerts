@@ -20,8 +20,8 @@ nav {
 }
 
 #logo {
-    width: 81px;
-    height: 81px;
+    width: 63px;
+    height: 63px;
 }
 
 .navigation {
@@ -56,11 +56,13 @@ main {
 
 #goToTop {
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+    right: 1rem;
+    bottom: 1rem;
     padding: 0.5rem;
     background-color: blue;
     color: white;
+    cursor: pointer;
+    Z-index: 11;
 }
 
 #tekst {
@@ -85,6 +87,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    Z-index: 10;
 }
 
 .tab span {
@@ -103,6 +106,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    Z-index: 10;
 }
 
 .smallTab span {
@@ -144,6 +148,28 @@ main {
 
 article {
     width: 50%;
+    position: relative;
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+article:hover .overlay {
+    opacity: 1;
 }
 
 .grootBeeld {
@@ -184,6 +210,14 @@ footer {
 
     article {
         width: 100%;
+    }
+
+    #intro {
+        height: 45rem;
+    }
+
+    #tekst {
+        top: 16rem;
     }
 }
 

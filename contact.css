@@ -20,8 +20,8 @@ nav {
 }
 
 #logo {
-    width: 81px;
-    height: 81px;
+    width: 63px;
+    height: 63px;
 }
 
 .navigation {
@@ -45,7 +45,6 @@ nav {
 }
 
 main {
-    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -83,9 +82,9 @@ footer {
     border-top: .5px solid blue;
 }
 
-@media screen and (max-width: 430px) {
-    body {
-        height: 932px;
+@media screen and (max-width: 500px) {
+    main div {
+        top: 16rem;
     }
 }
 

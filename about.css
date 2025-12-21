@@ -20,8 +20,8 @@ nav {
 }
 
 #logo {
-    width: 81px;
-    height: 81px;
+    width: 63px;
+    height: 63px;
 }
 
 .navigation {
@@ -44,6 +44,7 @@ main {
     display: flex;
     flex-direction: row;
     margin: 0 auto 5rem;
+    padding-top: 3rem;
 }
 
 #beelden {
@@ -74,7 +75,10 @@ main {
 #profielfoto {
     align-self: flex-end;
     position: relative;
-    top: 7.5rem;
+    top: 5.5rem;
+    height: 150px;
+    width: 300px;
+    border-right: 150px solid blue;
 }
 
 footer {
@@ -122,5 +126,12 @@ footer {
     #profielfoto {
         align-self: center;
         position: static;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #tekst {
+        min-width: 0;
     }
 }
