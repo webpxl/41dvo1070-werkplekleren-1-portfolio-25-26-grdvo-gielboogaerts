@@ -228,7 +228,15 @@ footer {
     }
 
     #tekst {
-        top: 10rem;
+        top: 9rem;
+    }
+
+    #EOPA-cover {
+        content:url("./content/EOPA/covers_vertical.png");
+    }
+
+    #EOPA-spreads {
+        content:url("./content/EOPA/spreads_vertical.png");
     }
 }
 
