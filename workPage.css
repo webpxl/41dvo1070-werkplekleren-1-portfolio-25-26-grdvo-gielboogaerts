@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    color: blue;
+}
+
+nav {
+    height: 97px;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#logo {
+    width: 63px;
+    height: 63px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: blue;
+}
+
+.navigation a:hover {
+    font-weight: normal;
+}
+
+#selected {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main a {
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    color: blue;
+    width: fit-content;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+#images {
+    gap: 0;
+    margin-bottom: 1rem;
+}
+
+#description {
+    flex-direction: column;
+    width: 45%;
+    text-align: justify;
+}
+
+#requirements {
+    width: 45%;
+}
+
+img {
+    width: 33.333%;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    min-width: 300px;
+}
+
+#goToTop {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    Z-index: 11;
+}
+
+footer {
+    height: 40px;
+    padding: 10px 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: blue;
+    border-top: .5px solid blue;
+}
+
+@media screen and (max-width: 1150px) {
+    img {
+        width: 50%;
+    }
+
+    #requirements {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    img {
+        width: 100%;
+    }
+
+    #requirements {
+        width: 100%;
+    }
+
+    #description {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    section {
+        justify-content: center;
+    }
+}
+
