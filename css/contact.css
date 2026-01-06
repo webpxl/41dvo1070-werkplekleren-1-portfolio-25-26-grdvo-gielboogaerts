@@ -53,7 +53,7 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    padding: 10rem 1rem 0 1rem;
+    padding: 8rem 1rem 0 1rem;
     flex: 1;
 }
 
@@ -66,7 +66,7 @@ main div {
 main div a {
     text-decoration: none;
     color: blue;
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding: 0 0 0.2rem 0.5rem;
 }
 
