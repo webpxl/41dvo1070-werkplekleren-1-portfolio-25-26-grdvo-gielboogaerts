@@ -4,7 +4,13 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
     color: blue;
@@ -46,32 +52,30 @@ nav {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 10rem 1rem 0 1rem;
+    flex: 1;
 }
 
 main div {
-    width: 270px;
-    position: relative;
-    top: 13rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    text-align: justify;
-    text-align-last: justify;
+    gap: 0.5rem;
 }
 
 main div a {
     text-decoration: none;
     color: blue;
+    font-size: 4rem;
+    padding: 0 0 0.2rem 0.5rem;
 }
 
 main div a:hover {
-    font-weight: normal;
+    background-color: blue;
+    color: white;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     height: 40px;
     padding: 10px 0;
     background-color: white;
