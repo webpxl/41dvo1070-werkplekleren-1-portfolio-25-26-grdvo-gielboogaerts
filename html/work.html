@@ -7,10 +7,13 @@
     <title>GIEL BOOGAERTS</title>
     <link rel="icon" type="image/x-icon" href="../assets/LEIG_zwart.png">
     <link rel="stylesheet" href="../css/work.css">
-    <script defer src="../scrollToTop.js"></script>
+    <script defer src="../mobility.js"></script>
 
 </head>
+
 <body>
+<div id="goToTop">Go to top</div>
+<div id="page">
 <nav>
     <a href="../index.html"><img id="logo" src="../assets/LEIG_blauw.png" alt="73I9_studio_logo" height="16px" width="auto">
     </a>
@@ -23,14 +26,13 @@
 
 </nav>
 
-<div id="goToTop">Go to top</div>
 
 <main>
     <section id="contentTable">
-            <a href="#books" >Books</a>
-            <a href="#posters">Posters</a>
-            <a href="#websites">Websites</a>
-            <a href="#photography">Photography</a>
+            <a href="#books" onclick="smoothScrollTo('books', 500)">Books</a>
+            <a href="#posters" onclick="smoothScrollTo('posters', 500)">Posters</a>
+            <a href="#websites" onclick="smoothScrollTo('websites', 500)">Websites</a>
+            <a href="#photography" onclick="smoothScrollTo('photography', 500)">Photography</a>
     </section>
 
     <section>
@@ -227,5 +229,6 @@
 <footer>
     ©2026 — G.Boogaerts — <a href="../privacy%20policy.rtf">Privacy Policy</a>
 </footer>
+</div>
 </body>
 </html>

@@ -8,6 +8,21 @@ html {
     scroll-behavior: smooth;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#page {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
@@ -84,7 +99,7 @@ nav {
 
     display: flex;
     align-items: center;
-    Z-index: 10;
+    z-index: 10;
 }
 
 .smallTab {
@@ -102,7 +117,7 @@ nav {
 
     display: flex;
     align-items: center;
-    Z-index: 10;
+    z-index: 10;
 }
 
 .work {
@@ -166,7 +181,7 @@ article:hover .overlay {
     border-radius: 1rem;
 
     cursor: pointer;
-    Z-index: 11;
+    z-index: 11;
 }
 
 footer {
