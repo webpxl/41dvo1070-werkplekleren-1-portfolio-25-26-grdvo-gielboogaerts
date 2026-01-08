@@ -70,7 +70,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    min-width: 380px;
+    min-width: 348px;
 }
 
 .entry {
@@ -127,7 +127,8 @@ main {
     align-items: center;
     gap: 10rem;
     width: 50%;
-    padding-top: 5rem;
+    padding: 5rem 1rem 0 1rem;
+    min-width: 348px;
 }
 
 .title {
@@ -139,6 +140,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    padding: 0 1rem;
     width: 50%;
     min-width: 600px;
 }
@@ -152,9 +154,9 @@ main {
 }
 
 #profielfoto {
-    height: 190px;
-    width: 380px;
-    border-right: 190px solid blue;
+    height: 174px;
+    width: 348px;
+    border-right: 174px solid blue;
 }
 
 footer {
@@ -180,14 +182,13 @@ footer {
     }
 
     #about div{
-        width: 380px;
+        width: 348px;
     }
 
     #career {
         align-items: center;
         gap: 8rem;
         padding-top: 10rem;
-        min-width: 380px;
     }
 
     #profielfoto {
@@ -195,3 +196,20 @@ footer {
         position: static;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #career {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #about {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #about div{
+        width: 100%;
+    }
+}
+
