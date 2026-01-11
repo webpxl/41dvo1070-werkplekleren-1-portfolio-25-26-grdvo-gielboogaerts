@@ -25,6 +25,7 @@ body {
     color: blue;
     display: flex;
     flex-direction: column;
+    align-items: center;
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
@@ -127,12 +128,14 @@ main {
     align-items: center;
     gap: 10rem;
     width: 50%;
-    padding: 5rem 1rem 0 1rem;
+    padding: 7rem 1rem 0 1rem;
     min-width: 348px;
 }
 
-.title {
+h1 {
     font-size: 3.5rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
 }
 
 #about {
@@ -168,11 +171,45 @@ footer {
     font-size: 13px;
     color: blue;
     border-top: .5px solid blue;
+    margin-top: 8rem;
 }
 
 #selected {
     font-weight: normal;
 }
+
+/*World map & hover selections*/
+.world {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
+#map {
+    width: 90%;
+    margin: 4rem 0;
+}
+
+.cls-1 {
+    fill: none;
+    stroke: blue;
+    stroke-miterlimit: 10;
+    stroke-width: .5px;
+}
+
+.visited {
+    fill: blue;
+    stroke: white;
+    stroke-miterlimit: 10;
+    stroke-width: .5px;
+}
+
 
 @media screen and (max-width: 1050px) {
 
@@ -195,6 +232,11 @@ footer {
         align-self: center;
         position: static;
     }
+
+    h1 {
+        align-self: inherit;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -211,5 +253,36 @@ footer {
     #about div{
         width: 100%;
     }
+
+    .map {
+        width: 100%;
+    }
 }
+
+svg path {
+    transition: all 0.3s ease; /* smooth effect */
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+svg path:hover {
+    transform-origin: center;  /* scale from center */
+    scale: calc(1.05);
+}
+
+#popUp {
+    position:absolute;
+    background: #c4c4ff;
+    color: white;
+    padding:6px 10px;
+    border-radius:6px;
+    display:none;
+    max-width:200px;
+    font-size:1rem;
+    line-height:1.4;
+}
+
+
+
+
 
