@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Stolzl, Helvetica, sans-serif;
     font-weight: lighter;
     color: blue;
     display: flex;
@@ -51,6 +51,7 @@ nav {
 }
 
 .navigation a {
+    font-weight: 200;
     text-decoration: none;
     color: blue;
 }
@@ -82,7 +83,7 @@ main {
 }
 
 .period {
-    font-weight: bold;
+    font-weight: normal;
     padding-left: 0.4rem;
     margin-bottom: .8rem;
 }
@@ -95,26 +96,29 @@ main {
 }
 
 .institution {
+    font-weight: 200;
     padding-left: 1.5rem;
 }
 
 .institutionSecondary {
+    font-weight: 200;
     padding-left: 4.5rem;
 }
 
 .location {
+    font-weight: 200;
     font-style: italic;
     padding-left: .5rem;
 }
 
 .course {
     padding-left: 3rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .courseSecondary {
     padding-left: 6rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .date {
@@ -134,7 +138,7 @@ main {
 
 h1 {
     font-size: 3.5rem;
-    font-weight: normal;
+    font-weight: 200;
     margin-bottom: 2rem;
 }
 
@@ -172,6 +176,14 @@ footer {
     color: blue;
     border-top: .5px solid blue;
     margin-top: 8rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: 200;
 }
 
 #selected {
