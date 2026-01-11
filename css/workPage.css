@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Stolzl, Helvetica, sans-serif;
     font-weight: lighter;
     color: blue;
     animation: fadeInUp 0.8s ease-out forwards;
@@ -44,6 +44,7 @@ nav {
 }
 
 .navigation a {
+    font-weight: 200;
     text-decoration: none;
     color: blue;
 }
@@ -58,13 +59,14 @@ nav {
 
 h1 {
     font-size: 5rem;
+    font-weight: normal;
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
 
 h2 {
     font-size: 3rem;
-    font-weight: normal;
+    font-weight: 200;
     margin-bottom: 1rem;
 }
 
@@ -117,12 +119,21 @@ img {
     width: 33.333%;
 }
 
+h1 {
+    width: 100%;
+    line-height: 1;
+}
+
 ul {
     list-style: none;
 }
 
 p {
     min-width: 300px;
+}
+
+span {
+    font-weight: 300;
 }
 
 .grootBeeld {
@@ -155,6 +166,14 @@ footer {
     border-top: .5px solid blue;
 }
 
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: 200;
+}
+
 @media screen and (max-width: 1150px) {
     img {
         width: 50%;
@@ -181,6 +200,10 @@ footer {
 
     section {
         justify-content: center;
+    }
+
+    h1 {
+        font-size: 3rem;
     }
 }
 

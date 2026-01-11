@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Stolzl, Helvetica, sans-serif;
     font-weight: lighter;
     color: blue;
 }
@@ -51,6 +51,7 @@ nav {
 }
 
 .navigation a {
+    font-weight: 200;
     text-decoration: none;
     color: blue;
 }
@@ -74,6 +75,7 @@ nav {
 
 #contentTable a {
     text-decoration: none;
+    font-weight: 200;
     color: blue;
     font-size: 3.5rem;
     padding: 0.2rem 0 0.2rem 0.5rem;
@@ -129,6 +131,7 @@ nav {
 
 article {
     width: 50%;
+    height: fit-content;
     position: relative;
 }
 
@@ -147,10 +150,21 @@ article img {
     height: 100%;
     opacity: 0;
     transition: .5s ease;
+    cursor: pointer;
 }
 
 article:hover .overlay {
     opacity: 1;
+}
+
+.comingSoon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comingSoon p {
+    position: absolute;
 }
 
 .bigImage {
@@ -194,6 +208,14 @@ footer {
     font-size: 13px;
     color: blue;
     border-top: .5px solid blue;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: 200;
 }
 
 @media screen and (max-width: 750px) {

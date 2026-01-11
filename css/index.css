@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Stolzl, Helvetica, sans-serif;
     font-weight: lighter;
     color: blue;
     display: flex;
@@ -51,6 +51,7 @@ nav {
 
 .navigation a {
     text-decoration: none;
+    font-weight: 200;
     color: blue;
 }
 
@@ -79,6 +80,10 @@ main div p {
     font-size: 2rem;
 }
 
+.normal {
+    font-weight: 200;
+}
+
 footer {
     height: 40px;
     padding: 10px 0;
@@ -90,8 +95,12 @@ footer {
     border-top: .5px solid blue;
 }
 
-.normal {
-    font-weight: normal;
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: 200;
 }
 
 @media screen and (max-width: 600px) {
