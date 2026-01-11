@@ -20,7 +20,7 @@ document.querySelectorAll('svg path').forEach(country => {
         popUp.style.left = e.pageX + 10 + 'px';
         popUp.style.top = e.pageY + 10 + 'px';
 
-        const citiesHTML = cities ? cities.split(',').join('<br>') : 'No cities available';
+        const citiesHTML = cities ? cities.split(',').join('<br>') : '';
 
         popUp.innerHTML = `<strong>${name}</strong><br>${citiesHTML}`;
     });
