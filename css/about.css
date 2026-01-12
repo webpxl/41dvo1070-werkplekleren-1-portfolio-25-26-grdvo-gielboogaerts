@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -13,6 +7,12 @@
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -60,12 +60,60 @@ nav {
     font-weight: normal;
 }
 
+#selected {
+    font-weight: normal;
+}
+
 main {
     flex: 1;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem 1rem 8rem 1rem;
+}
+
+#information {
+    display: flex;
     flex-direction: row;
-    padding: 9rem 1rem 0 1rem;
-    margin-bottom: 8rem;
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+    width: 50%;
+}
+
+#about p {
+    text-align: justify;
+    width: 60%;
+    min-width: 348px;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    width: 50%;
+    padding: 8rem 1rem 0 1rem;
+    min-width: 348px;
+}
+
+#profilePicture {
+    height: 174px;
+    width: 348px;
+    border-right: 174px solid blue;
 }
 
 .education {
@@ -126,82 +174,17 @@ main {
     margin-top: .8rem;
 }
 
-#career {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10rem;
-    width: 50%;
-    padding: 7rem 1rem 0 1rem;
-    min-width: 348px;
-}
-
-h1 {
-    font-size: 3.5rem;
-    font-weight: 200;
-    margin-bottom: 2rem;
-}
-
-#about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding: 0 1rem;
-    width: 50%;
-    min-width: 600px;
-}
-
-#about div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: justify;
-    width: 60%;
-}
-
-#profielfoto {
-    height: 174px;
-    width: 348px;
-    border-right: 174px solid blue;
-}
-
-footer {
-    height: 40px;
-    padding: 10px 0;
-    background-color: white;
-    width: 100%;
-    text-align: center;
-    font-size: 13px;
-    color: blue;
-    border-top: .5px solid blue;
-    margin-top: 8rem;
-}
-
-footer a {
-    text-decoration: none;
-}
-
-footer a:hover {
-    font-weight: 200;
-}
-
-#selected {
-    font-weight: normal;
-}
-
 /*World map & hover selections*/
 .world {
     width: 100%;
-    padding: 0 2rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     text-align: center;
-    margin-top: 4rem;
+    font-weight: 200;
+    margin-top: 8rem;
 }
-
 
 #map {
     width: 90%;
@@ -220,55 +203,6 @@ footer a:hover {
     stroke: white;
     stroke-miterlimit: 10;
     stroke-width: .5px;
-}
-
-
-@media screen and (max-width: 1050px) {
-
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about div{
-        width: 348px;
-    }
-
-    #career {
-        align-items: center;
-        gap: 8rem;
-        padding-top: 10rem;
-    }
-
-    #profielfoto {
-        align-self: center;
-        position: static;
-    }
-
-    h1 {
-        align-self: inherit;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #career {
-        width: 100%;
-        min-width: 0;
-    }
-
-    #about {
-        width: 100%;
-        min-width: 0;
-    }
-
-    #about div{
-        width: 100%;
-    }
-
-    .map {
-        width: 100%;
-    }
 }
 
 svg path {
@@ -293,6 +227,56 @@ svg path:hover {
     font-size:1rem;
     line-height:1.4;
 }
+
+footer {
+    height: 40px;
+    padding: 10px 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: blue;
+    border-top: .5px solid blue;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: 200;
+}
+
+@media screen and (max-width: 1050px) {
+
+    #information {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #timeline {
+        align-items: center;
+        gap: 8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #timeline {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #about {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
+
+
 
 
 
